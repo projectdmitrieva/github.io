@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой тестовый сайт для Яндекс.Метрики</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            color: blue;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        form {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать на мой тестовый сайт!</h1>
+    <p>Этот сайт создан для обучения и тестирования Яндекс.Метрики.</p>
+
+    <!-- Разные страницы для отслеживания переходов -->
+    <a href="about.html">Ссылка на страницу "О нас"</a>
+    <a href="contact.html">Ссылка на страницу "Контакты"</a>
+    <a href="https://yandex.ru" target="_blank">Внешняя ссылка на Яндекс</a>
+
+    <!-- Кнопки для тестирования целей "JavaScript-событие" -->
+    <button onclick="alert('Заявка отправлена!')">Отправить заявку (Цель 1)</button>
+    <button onclick="alert('Скачано!')">Скачать прайс-лист (Цель 2)</button>
+
+    <!-- Форма для тестирования цели "Отправка формы" -->
+    <form onsubmit="alert('Форма отправлена!'); return false;">
+        <h3>Форма обратной связи</h3>
+        <input type="text" placeholder="Ваше имя" required><br><br>
+        <input type="email" placeholder="Ваш e-mail" required><br><br>
+        <button type="submit">Отправить форму</button>
+    </form>
+
+    <!-- Область для тестирования Яндекс.Вебвизора -->
+    <div style="height: 500px; background-color: #f0f0f0; margin-top: 20px;">
+        <p>Прокрутите эту область вниз, чтобы проверить скролл в Вебвизоре.</p>
+        <div style="height: 1000px;"></div>
+        <p>Вы долистали до конца!</p>
+    </div>
+
+    <!-- Код Яндекс.Метрики -->
+    <!-- ВСТАВЬТЕ СЮДА ВАШ СЧЕТЧИК ИЗ МЕТРИКИ -->
+
+</body>
+</html>
