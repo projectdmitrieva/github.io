@@ -49,7 +49,9 @@
     <!-- Разные страницы для отслеживания переходов -->
     <a href="about.html">Ссылка на страницу "О нас"</a>
     <a href="contact.html">Ссылка на страницу "Контакты"</a>
-    <a href="https://yandex.ru" target="_blank">Внешняя ссылка на Яндекс</a>
+    <a href="https://yandex.ru" target="_blank">Внешняя ссылка на Яндекс</a>        
+    <!-- Простая ссылка для тестирования перехода на страницу благодарности -->
+    <a href="thank-you-page.html">Ссылка на страницу благодарности</a>
 
     <!-- Кнопки для тестирования целей "JavaScript-событие" -->
     <button onclick="alert('Заявка отправлена!')">Отправить заявку (Цель 1)</button>
@@ -63,8 +65,34 @@
         <button type="submit">Отправить форму</button>
     </form>
     
-    <!-- Простая ссылка для тестирования перехода на страницу благодарности -->
-    <a href="thank-you-page.html">Ссылка на страницу благодарности</a>
+    <!-- Блок контактов -->
+    <section style="margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;">
+        <h2 style="text-align: center; margin-bottom: 25px;">Наши контакты</h2>
+        
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div class="contact-method" style="text-align: center; margin: 10px;">
+                <div style="font-size: 40px;">📞</div>
+                <h3>Телефон</h3>
+                <a href="tel:+79991234567" style="color: white; font-size: 18px; font-weight: bold; text-decoration: none;">
+                    +7 (999) 123-45-67
+                </a>
+            </div>
+            
+            <div class="contact-method" style="text-align: center; margin: 10px;">
+                <div style="font-size: 40px;">📧</div>
+                <h3>Email</h3>
+                <a href="mailto:info@testsite.ru" style="color: white; font-size: 18px; font-weight: bold; text-decoration: none;">
+                    info@testsite.ru
+                </a>
+            </div>
+            
+            <div class="contact-method" style="text-align: center; margin: 10px;">
+                <div style="font-size: 40px;">🕒</div>
+                <h3>Время работы</h3>
+                <p>Пн-Пт: 9:00-18:00</p>
+            </div>
+        </div>
+    </section>
     
     <!-- Область для тестирования Яндекс.Вебвизора -->
     <div style="height: 500px; background-color: #f0f0f0; margin-top: 20px;">
