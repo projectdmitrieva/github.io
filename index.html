@@ -42,10 +42,10 @@
     <button onclick="alert('Скачано!')">Скачать прайс-лист (Цель 2)</button>
 
     <!-- Форма для тестирования цели "Отправка формы" -->
-    <form onsubmit="alert('Форма отправлена!'); return false;">
+    <form action="thank-you-page.html" method="GET">
         <h3>Форма обратной связи</h3>
-        <input type="text" placeholder="Ваше имя" required><br><br>
-        <input type="email" placeholder="Ваш e-mail" required><br><br>
+        <input type="text" name="name" placeholder="Ваше имя" required><br><br>
+        <input type="email" name="email" placeholder="Ваш e-mail" required><br><br>
         <button type="submit">Отправить форму</button>
     </form>
 
